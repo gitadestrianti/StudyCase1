@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="42dp"
+            android:text="Makan Malam dengan Milea"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/textView" />
+
+        <EditText
+            android:id="@+id/et_data1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/et_data2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="56dp"
+            android:hint="Masukkan nama makanan" />
+
+        <EditText
+            android:id="@+id/et_data2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:hint="Masukkan jumlah porsi" />
+
+        <Button
+            android:id="@+id/bt_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="118dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginStart="50dp"
+            android:background="@color/colorAccent"
+            android:textColor="@color/colorWhite"
+            android:text="EatBus"
+            android:onClick="clickEatbus"/>
+
+        <Button
+            android:id="@+id/bt_submitintent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/bt_submit"
+            android:layout_alignBottom="@+id/bt_submit"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="35dp"
+            android:layout_marginRight="35dp"
+            android:background="@color/colorAccent"
+            android:textColor="@color/colorWhite"
+            android:text="Abnormal"
+            android:onClick="clickAbnormal"/>
+    </RelativeLayout>
+
+</LinearLayout>
